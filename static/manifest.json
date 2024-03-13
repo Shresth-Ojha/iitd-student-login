@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "IITD Student Login",
+    "version": "1.0.0",
+    "description": "Fills login credentials on IITD student services.",
+    "content_scripts": [
+        {
+            "js": ["content.bundle.js"],
+            "matches": [
+                "https://webmail.iitd.ac.in/roundcube/*",
+                "https://moodle.iitd.ac.in/login/index.php/*",
+                "https://oauth.iitd.ac.in/login.php*",
+                "https://ocs.iitd.ac.in/portal/login?role=student"
+            ]
+        }
+    ]
+}
